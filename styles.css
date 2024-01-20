@@ -1,0 +1,178 @@
+body {
+  padding: 40px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+nav {
+  align-self: center;
+}
+
+
+#search-box, #search-repo {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.function {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repos-per-page {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 250px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.input-range {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#range-value {
+  font-size: large;
+  font-weight: 500;
+   border: 2px solid black;
+   padding: 5px;
+}
+
+.repo-search {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 20px;
+
+}
+
+#search-repo {
+  width: 300px;
+  flex: 1;
+  padding: 10px;
+  border: none;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 20px 0;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+#repos h1 {
+  text-align: center;
+  color: gray;
+}
+
+#repos h2{
+  text-align: center;
+  color: red;
+}
+.repo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+}
+
+
+.repo > .title > a{
+  margin-top: 0;
+  text-decoration: none;
+  color: blue;
+  font-size: large;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.repo > div {
+  font-weight: 600;
+}
+
+.repo > .topics {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.repo > .topics > span {
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-weight: 300;
+  font-size: medium;
+}
+
+.page-info {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button#prev-btn {
+  background-color: red;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input:focus{
+  outline: none;
+}
